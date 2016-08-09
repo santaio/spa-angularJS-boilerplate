@@ -1,0 +1,83 @@
+@import "vars.scss";
+@import "mixins.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	overflow: hidden;
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, .5);
+	padding: 10px 0;
+	text-align: center;
+	z-index: 1;
+
+	ul {
+		list-style: none;
+		margin: 0;
+	}
+
+	li {
+		display: inline-block;
+
+		a {
+			display: block;
+			padding: 8px;
+			font-size: 16px;
+			text-decoration: none;
+
+			&:hover {
+				background: rgba(0,0,0, .1);
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+section {
+	background: green;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
+	.content {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		transform: translate-Y(-50%);
+
+		h1 {
+			font-size: 60px;
+		} 
+
+		p {
+			font-size: 25px;
+		}
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, .5);
+	padding: 20px 0;
+	text-align: center;
+
+	p {
+		margin: 0;
+	}
+}
